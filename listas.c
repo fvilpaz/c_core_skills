@@ -27,10 +27,10 @@ t_node  *create_node(int num)
 // 3. Función para añadir un nodo al final de la lista
 // Recibe: head (doble puntero para poder modificar la cabeza si la lista está vacía)
 //          number (el valor del nuevo nodo)
-void    add_to_end(t_node **head, int number)
+void    add_to_end(t_node **head, int n)
 {
     // 1. Crear el nuevo nodo (usando tu función existente)
-    t_node  *new_node = create_node(number);
+    t_node  *new_node = create_node(n);
     if (!new_node) // Si malloc falló, salimos
         return;
 
@@ -54,6 +54,30 @@ void    add_to_end(t_node **head, int number)
     current->next = new_node;
 }
 
+// función para imprimir la lista
+void	print_list(t_node *head)
+{
+	t_node *current = head;
+	while (current != NULL)
+	{
+		printf("%d -> ", current->number);
+		current = current->next;
+	}
+	printf("NULL\n");
+}
+
+// función para liberar nodos
+void	free_list(t_node *head)
+{
+	t_node *current = head;
+	t_node *tmp;
+	while (current != NULL)
+	{
+		tmp = current; // guardamos current en tmp
+		current = current->next;	// avanzamos la posicion
+		free(tmp); // liberamos la memria
+	}
+}
 // 4. Función principal
 int main(void)
 {
@@ -65,16 +89,10 @@ int main(void)
 
     // Imprimimos la lista
     t_node  *current = head;
-    while (current != NULL)
-    {
-        printf("%d -> ",current->number);
-        current = current->next;
-    }
-    printf("NULL\n");
+	print_list(head);
+    
     // Liberar memoria
-    free(head->next->next); // tercer nodo n3
-    free(head->next); // segundo nodo n2
-    free(head); // primer nodo n1
+	free_list(head);
     head = NULL; // buena practica para evitar punteros colgantes o comportamiento indefinido
 
     return (0);
