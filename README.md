@@ -1,7 +1,8 @@
 # Core C Skills
 
-This repository documents my journey to master the fundamentals of the C programming language.  
-The goal is to build a strong, low-level foundation for systems programming.
+ This repository documents my journey to master the fundamentals of the C programming language.
+  
+ The goal is to build a strong, low-level foundation for systems programming.
 
 ## Concepts Practiced
 - Linked Lists
@@ -37,7 +38,7 @@ git diff <id1> <id2>     # compare between stages
 
 ```bash
 
-- [56fca52] BUILD: Initial commit. Adding - linked list practice code.
+- [56fca52] BUILD: Initial commit. Adding -> linked list practice code.
 
 - [4314295] DOCS: Add README with goals and concepts.
 
@@ -46,7 +47,7 @@ git diff <id1> <id2>     # compare between stages
 - [ff28c94] FEAT: add print_list and free_list functions.
 
 - [fdc4ce0] FEAT: add add_to_start & swap_first_two functions.
-
+```
 
 ---
 
