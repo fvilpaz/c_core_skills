@@ -51,4 +51,5 @@ This example shows how the repository evolved step by step, from the initial com
 ## Notes
 
 📝 This repo is public to share my practice and learning journey.  
+
 The actual 42 project (**push_swap**) is kept in a private repository as per school rules.
