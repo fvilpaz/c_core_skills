@@ -31,7 +31,9 @@ git log --oneline        # see the history of my progress
 git show <commit_hash>   # inspect a specific step
 git diff <id1> <id2>     # compare between stages
 ```
-Example: From Basic to Advanced
+
+
+## Example: From Basic to Advanced
 
 [56fca52] BUILD: Initial commit. Adding linked list practice code.
 
@@ -44,8 +46,9 @@ Example: From Basic to Advanced
 [fdc4ce0] FEAT: add add_to_start & swap_first_two functions.
 
 
+---
+
 ##Notes
 
 📝 This repo is public to share my practice and learning journey.
 The actual 42 project (push_swap) is kept in a private repository as per school rules.
- como ves esto?
