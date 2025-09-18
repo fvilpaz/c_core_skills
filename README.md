@@ -35,20 +35,22 @@ git diff <id1> <id2>     # compare between stages
 
 ## Example: From Basic to Advanced
 
-[56fca52] BUILD: Initial commit. Adding linked list practice code.
+```bash
 
-[4314295] DOCS: Add README with goals and concepts.
+- [56fca52] BUILD: Initial commit. Adding - linked list practice code.
 
-[adcb3cf] DIA 2: add_to_end implementado. Listas operativas.
+- [4314295] DOCS: Add README with goals and concepts.
 
-[ff28c94] FEAT: add print_list and free_list functions.
+- [adcb3cf] DIA 2: add_to_end implementado. Listas operativas.
 
-[fdc4ce0] FEAT: add add_to_start & swap_first_two functions.
+- [ff28c94] FEAT: add print_list and free_list functions.
+
+- [fdc4ce0] FEAT: add add_to_start & swap_first_two functions.
 
 
 ---
 
-##Notes
+## Notes
 
 📝 This repo is public to share my practice and learning journey.
 The actual 42 project (push_swap) is kept in a private repository as per school rules.
