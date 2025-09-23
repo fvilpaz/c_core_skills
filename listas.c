@@ -118,6 +118,20 @@ void	push_to_list(t_node **dest, t_node **src)
 	*dest = node_to_move;
 }
 
+// funcion para rotar listas
+void	rotate(t_node **head)
+{
+	if (*head == NULL || (*head)->next == NULL)
+		return ;
+	t_node	*first = *head;
+	t_node	*last = *head;
+
+	while (last->next != NULL)
+		last = last->next;
+	last->next = first;
+	*head = first->next;
+	first->next = NULL;
+}
 
 // Función principal
 int main(void)
@@ -138,6 +152,9 @@ int main(void)
 	printf("\nSWAPING...\n");
 	swap_first_two(&head);
 	printf("Head_Now: ");
+	print_list(head);
+	rotate(&head);
+	printf("Rotating....\n");
 	print_list(head);
     
 	// Push: movere el primer nodo de head a list_1
